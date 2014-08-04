@@ -1,0 +1,68 @@
+{
+   "abstract" : "Simple asynchronous ftp client and server",
+   "author" : [
+      "Graham Ollis <plicease@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.142060",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "AnyEvent-FTP",
+   "no_index" : {
+      "directory" : [
+         "example",
+         "tools"
+      ]
+   },
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Module::Build" : "0.28"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.28"
+         }
+      },
+      "runtime" : {
+         "recommends" : {
+            "EV" : "0"
+         },
+         "requires" : {
+            "AnyEvent" : "0",
+            "File::chdir" : "0",
+            "List::MoreUtils" : "0",
+            "Moo" : "1.001000",
+            "Path::Class" : "0.26",
+            "PerlIO::eol" : "0",
+            "URI" : "0",
+            "perl" : "v5.10.1"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "File::HomeDir" : "0.91"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/plicease/AnyEvent-FTP/issues"
+      },
+      "homepage" : "http://perl.wdlabs.com/AnyEvent-FTP",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/plicease/AnyEvent-FTP.git",
+         "web" : "https://github.com/plicease/AnyEvent-FTP"
+      }
+   },
+   "version" : "0.01"
+}
+

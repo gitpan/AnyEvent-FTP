@@ -13,7 +13,7 @@ use Path::Class qw( tempdir );
 extends 'AnyEvent::FTP::Server';
 
 # ABSTRACT: Test (non-blocking) ftp clients against a real FTP server
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 
 has test_uri => (
@@ -384,6 +384,8 @@ sub _display_content
   my $tb = shift;
   state $temp;
   state $counter = 0;
+  my $method = 'diag';
+  $method = 'note' if $tb->todo;
   
   unless(defined $temp)
   {
@@ -395,17 +397,17 @@ sub _display_content
   
   if(-T $file)
   {
-    $tb->diag("  $_") for split /\n/, $_[0];
+    $tb->$method("  $_") for split /\n/, $_[0];
   }
   else
   {
     if(eval { require Data::HexDump })
     {
-      $tb->diag("  $_") for grep !/^$/, split /\n/, Data::HexDump::HexDump($_[0]);
+      $tb->$method("  $_") for grep !/^$/, split /\n/, Data::HexDump::HexDump($_[0]);
     }
     else
     {
-      $tb->diag("  binary content");
+      $tb->$method("  binary content");
     }
   }
   
@@ -479,7 +481,7 @@ Test::AnyEventFTPServer - Test (non-blocking) ftp clients against a real FTP ser
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -629,7 +631,13 @@ The default timeout is 30 seconds.
 
 =head1 AUTHOR
 
-Graham Ollis <plicease@cpan.org>
+author: Graham Ollis <plicease@cpan.org>
+
+contributors:
+
+Ryo Okamoto
+
+Shlomi Fish
 
 =head1 COPYRIGHT AND LICENSE
 

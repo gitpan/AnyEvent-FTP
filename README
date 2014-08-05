@@ -4,7 +4,7 @@ NAME
 
 VERSION
 
-    version 0.01
+    version 0.02
 
 SYNOPSIS
 
@@ -83,7 +83,13 @@ SEE ALSO
 
 AUTHOR
 
-    Graham Ollis <plicease@cpan.org>
+    author: Graham Ollis <plicease@cpan.org>
+
+    contributors:
+
+    Ryo Okamoto
+
+    Shlomi Fish
 
 COPYRIGHT AND LICENSE
 

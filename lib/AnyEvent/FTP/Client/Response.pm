@@ -6,7 +6,7 @@ use v5.10;
 use base qw( AnyEvent::FTP::Response );
 
 # ABSTRACT: Response class for asynchronous ftp client
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 
 sub get_address_and_port
@@ -47,7 +47,7 @@ AnyEvent::FTP::Client::Response - Response class for asynchronous ftp client
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 DESCRIPTION
 
@@ -80,7 +80,13 @@ Returns the filename from a response to the C<STOU> command.
 
 =head1 AUTHOR
 
-Graham Ollis <plicease@cpan.org>
+author: Graham Ollis <plicease@cpan.org>
+
+contributors:
+
+Ryo Okamoto
+
+Shlomi Fish
 
 =head1 COPYRIGHT AND LICENSE
 

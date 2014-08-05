@@ -7,7 +7,7 @@ use Moo::Role;
 use warnings NONFATAL => 'all';
 
 # ABSTRACT: Role for old archaic FTP server commands
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 
 has syst => (
@@ -60,7 +60,7 @@ AnyEvent::FTP::Server::Role::Old - Role for old archaic FTP server commands
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -128,7 +128,13 @@ on UNIX.  That is also the default.
 
 =head1 AUTHOR
 
-Graham Ollis <plicease@cpan.org>
+author: Graham Ollis <plicease@cpan.org>
+
+contributors:
+
+Ryo Okamoto
+
+Shlomi Fish
 
 =head1 COPYRIGHT AND LICENSE
 

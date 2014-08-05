@@ -10,7 +10,7 @@ use AnyEvent::Socket qw( tcp_connect );
 extends 'AnyEvent::FTP::Client::Transfer';
 
 # ABSTRACT: Passive transfer class for asynchronous ftp client
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 sub BUILD
 {
@@ -88,11 +88,17 @@ AnyEvent::FTP::Client::Transfer::Passive - Passive transfer class for asynchrono
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 AUTHOR
 
-Graham Ollis <plicease@cpan.org>
+author: Graham Ollis <plicease@cpan.org>
+
+contributors:
+
+Ryo Okamoto
+
+Shlomi Fish
 
 =head1 COPYRIGHT AND LICENSE
 

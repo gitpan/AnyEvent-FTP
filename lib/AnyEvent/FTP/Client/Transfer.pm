@@ -10,7 +10,7 @@ use AnyEvent::Handle;
 use Carp qw( confess );
 
 # ABSTRACT: Transfer class for asynchronous ftp client
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 
 # TODO: implement ABOR
@@ -101,7 +101,7 @@ AnyEvent::FTP::Client::Transfer - Transfer class for asynchronous ftp client
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -198,7 +198,13 @@ For C<STOU> transfers ONLY, this returns the remote file name.
 
 =head1 AUTHOR
 
-Graham Ollis <plicease@cpan.org>
+author: Graham Ollis <plicease@cpan.org>
+
+contributors:
+
+Ryo Okamoto
+
+Shlomi Fish
 
 =head1 COPYRIGHT AND LICENSE
 

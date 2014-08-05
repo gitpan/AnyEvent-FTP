@@ -9,7 +9,7 @@ use warnings NONFATAL => 'all';
 extends 'AnyEvent::FTP::Client::Site::Base';
 
 # ABSTRACT: Site specific commands for Proftpd
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 
 sub utime   { shift->client->push_command([SITE => "UTIME $_[0] $_[1]"]   ) }
@@ -38,7 +38,7 @@ AnyEvent::FTP::Client::Site::Proftpd - Site specific commands for Proftpd
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -90,7 +90,13 @@ Execute C<SITE CHMOD> command.
 
 =head1 AUTHOR
 
-Graham Ollis <plicease@cpan.org>
+author: Graham Ollis <plicease@cpan.org>
+
+contributors:
+
+Ryo Okamoto
+
+Shlomi Fish
 
 =head1 COPYRIGHT AND LICENSE
 

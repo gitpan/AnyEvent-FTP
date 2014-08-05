@@ -9,7 +9,7 @@ use warnings NONFATAL => 'all';
 extends 'AnyEvent::FTP::Client::Site::Base';
 
 # ABSTRACT: Site specific commands for Microsoft FTP Service
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 
 # TODO add a test for this
@@ -29,7 +29,7 @@ AnyEvent::FTP::Client::Site::Microsoft - Site specific commands for Microsoft FT
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -68,7 +68,13 @@ Toggle between directory listing output styles.
 
 =head1 AUTHOR
 
-Graham Ollis <plicease@cpan.org>
+author: Graham Ollis <plicease@cpan.org>
+
+contributors:
+
+Ryo Okamoto
+
+Shlomi Fish
 
 =head1 COPYRIGHT AND LICENSE
 

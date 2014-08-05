@@ -12,7 +12,7 @@ use File::Temp qw( tempfile );
 extends 'AnyEvent::FTP::Server::Context::FS';
 
 # ABSTRACT: FTP Server client context class with full read/write access
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 
 with 'AnyEvent::FTP::Server::Role::TransferPrep';
@@ -335,7 +335,7 @@ AnyEvent::FTP::Server::Context::FSRW - FTP Server client context class with full
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -391,7 +391,13 @@ and super class, this context provides these FTP commands:
 
 =head1 AUTHOR
 
-Graham Ollis <plicease@cpan.org>
+author: Graham Ollis <plicease@cpan.org>
+
+contributors:
+
+Ryo Okamoto
+
+Shlomi Fish
 
 =head1 COPYRIGHT AND LICENSE
 

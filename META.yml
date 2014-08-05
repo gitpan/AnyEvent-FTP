@@ -33,4 +33,4 @@ resources:
   bugtracker: https://github.com/plicease/AnyEvent-FTP/issues
   homepage: http://perl.wdlabs.com/AnyEvent-FTP
   repository: git://github.com/plicease/AnyEvent-FTP.git
-version: '0.01'
+version: '0.02'

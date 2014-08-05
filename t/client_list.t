@@ -10,7 +10,7 @@ use FindBin ();
 require "$FindBin::Bin/lib.pl";
 
 plan skip_all => 'requires client and server on localhost' if $ENV{AEF_REMOTE};
-plan tests => 22;
+plan tests => 4;
 
 our $config;
 $config->{dir} = tempdir( CLEANUP => 1 );
@@ -44,13 +44,14 @@ foreach my $passive (0,1)
   $client->type('I')->recv;
   $client->cwd($config->{dir})->recv;
 
-  do {
+  subtest 'listing with directory' => sub {
+    plan tests => 6;
     my $list = eval { $client->list->recv };
     diag $@ if $@;
     isa_ok $list, 'ARRAY';
     $list //= [];
     # wu-ftpd
-    shift @$list if $list->[0] =~ /^total \d+$/i;
+    shift @$list if $list->[0] =~ / \d+$/i;
     # Net::FTPServer
     shift @$list if $list->[0] =~ /\s\.$/;
     shift @$list if $list->[0] =~ /\s\.\.$/;
@@ -63,13 +64,14 @@ foreach my $passive (0,1)
   };
 
 
-  do {
+  subtest 'listing in sub directory' => sub {
+    plan tests => 5;
     my $list = eval { $client->list('dir2')->recv };
     diag $@ if $@;
     isa_ok $list, 'ARRAY';
     $list //= [];
     # wu-ftpd
-    shift @$list if $list->[0] =~ /^total \d+$/i;
+    shift @$list if $list->[0] =~ / \d+$/i;
     # Net::FTPServer
     shift @$list if $list->[0] =~ /\s\.$/;
     shift @$list if $list->[0] =~ /\s\.\.$/;

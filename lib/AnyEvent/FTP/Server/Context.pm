@@ -7,7 +7,7 @@ use Moo;
 use warnings NONFATAL => 'all';
 
 # ABSTRACT: FTP Server client context class
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 with 'AnyEvent::FTP::Role::Event';
 with 'AnyEvent::FTP::Server::Role::Context';
@@ -112,7 +112,7 @@ AnyEvent::FTP::Server::Context - FTP Server client context class
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 METHODS
 
@@ -160,7 +160,13 @@ is used.
 
 =head1 AUTHOR
 
-Graham Ollis <plicease@cpan.org>
+author: Graham Ollis <plicease@cpan.org>
+
+contributors:
+
+Ryo Okamoto
+
+Shlomi Fish
 
 =head1 COPYRIGHT AND LICENSE
 

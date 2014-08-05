@@ -7,7 +7,7 @@ use Moo;
 use warnings NONFATAL => 'all';
 
 # ABSTRACT: Server response encoder that encodes responses so they cannot be confused
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 
 with 'AnyEvent::FTP::Server::Role::ResponseEncoder';
@@ -51,7 +51,7 @@ AnyEvent::FTP::Server::UnambiguousResponseEncoder - Server response encoder that
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -74,7 +74,13 @@ L<AnyEvent::FTP::Response> object, or a code message pair.
 
 =head1 AUTHOR
 
-Graham Ollis <plicease@cpan.org>
+author: Graham Ollis <plicease@cpan.org>
+
+contributors:
+
+Ryo Okamoto
+
+Shlomi Fish
 
 =head1 COPYRIGHT AND LICENSE
 

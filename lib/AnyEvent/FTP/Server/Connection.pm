@@ -8,7 +8,7 @@ use warnings NONFATAL => 'all';
 use AnyEvent::FTP::Request;
 
 # ABSTRACT: FTP Server connection class
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 with 'AnyEvent::FTP::Role::Event';
 
@@ -83,7 +83,7 @@ AnyEvent::FTP::Server::Connection - FTP Server connection class
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 METHODS
 
@@ -113,7 +113,13 @@ Sends the response. Returns the connection object ($conn).
 
 =head1 AUTHOR
 
-Graham Ollis <plicease@cpan.org>
+author: Graham Ollis <plicease@cpan.org>
+
+contributors:
+
+Ryo Okamoto
+
+Shlomi Fish
 
 =head1 COPYRIGHT AND LICENSE
 

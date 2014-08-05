@@ -5,7 +5,7 @@ use warnings;
 use v5.10;
 
 # ABSTRACT: Simple asynchronous ftp client and server
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 
 1;
@@ -22,7 +22,7 @@ AnyEvent::FTP - Simple asynchronous ftp client and server
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -134,7 +134,13 @@ L<http://en.wikipedia.org/wiki/List_of_FTP_server_return_codes>
 
 =head1 AUTHOR
 
-Graham Ollis <plicease@cpan.org>
+author: Graham Ollis <plicease@cpan.org>
+
+contributors:
+
+Ryo Okamoto
+
+Shlomi Fish
 
 =head1 COPYRIGHT AND LICENSE
 

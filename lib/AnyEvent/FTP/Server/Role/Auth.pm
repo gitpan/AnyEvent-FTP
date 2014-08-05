@@ -7,7 +7,7 @@ use Moo::Role;
 use warnings NONFATAL => 'all';
 
 # ABSTRACT: Authentication role for FTP server
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 
 has user => (is => 'rw');
@@ -138,7 +138,7 @@ AnyEvent::FTP::Server::Role::Auth - Authentication role for FTP server
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 

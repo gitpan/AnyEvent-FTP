@@ -7,7 +7,7 @@ use Moo::Role;
 use warnings NONFATAL => 'all';
 
 # ABSTRACT: Store transfer interface for AnyEvent::FTP objects
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 sub xfer
 {
@@ -93,7 +93,7 @@ AnyEvent::FTP::Client::Role::StoreTransfer - Store transfer interface for AnyEve
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 AUTHOR
 

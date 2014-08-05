@@ -9,7 +9,7 @@ use warnings NONFATAL => 'all';
 extends 'AnyEvent::FTP::Server::Context::FSRW';
 
 # ABSTRACT: FTP Server client context class with read-only access
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 
 sub cmd_stor
@@ -41,7 +41,7 @@ AnyEvent::FTP::Server::Context::FSRO - FTP Server client context class with read
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 

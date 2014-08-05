@@ -7,7 +7,7 @@ use Moo::Role;
 use warnings NONFATAL => 'all';
 
 # ABSTRACT: Server connection context role
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 requires 'push_request';
 
@@ -25,7 +25,7 @@ AnyEvent::FTP::Server::Role::Context - Server connection context role
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 AUTHOR
 

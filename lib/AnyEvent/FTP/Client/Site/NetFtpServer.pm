@@ -9,7 +9,7 @@ use warnings NONFATAL => 'all';
 extends 'AnyEvent::FTP::Client::Site::Base';
 
 # ABSTRACT: Site specific commands for Net::FTPServer
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 
 # TODO add a test for this
@@ -30,7 +30,7 @@ AnyEvent::FTP::Client::Site::NetFtpServer - Site specific commands for Net::FTPS
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 

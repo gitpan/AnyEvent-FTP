@@ -7,7 +7,7 @@ use Moo;
 use warnings NONFATAL => 'all';
 
 # ABSTRACT: base class for AnyEvent::FTP::Client::Site::* classes
-our $VERSION = '0.03'; # VERSION
+our $VERSION = '0.04'; # VERSION
 
 sub BUILDARGS
 {
@@ -31,7 +31,7 @@ AnyEvent::FTP::Client::Site::Base - base class for AnyEvent::FTP::Client::Site::
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 AUTHOR
 

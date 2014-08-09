@@ -8,7 +8,7 @@ use warnings NONFATAL => 'all';
 use AnyEvent;
 
 # ABSTRACT: Request buffer role for asynchronous ftp client
-our $VERSION = '0.03'; # VERSION
+our $VERSION = '0.04'; # VERSION
 
 
 has request_buffer => (
@@ -139,7 +139,7 @@ AnyEvent::FTP::Client::Role::RequestBuffer - Request buffer role for asynchronou
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 DESCRIPTION
 

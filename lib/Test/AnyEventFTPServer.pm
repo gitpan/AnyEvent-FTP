@@ -13,7 +13,7 @@ use Path::Class qw( tempdir );
 extends 'AnyEvent::FTP::Server';
 
 # ABSTRACT: Test (non-blocking) ftp clients against a real FTP server
-our $VERSION = '0.03'; # VERSION
+our $VERSION = '0.04'; # VERSION
 
 
 has test_uri => (
@@ -438,7 +438,7 @@ sub global_timeout_ok (;$$)
 {
   my($timeout, $message) = @_;
   
-  $timeout //= 30;
+  $timeout //= 120;
   $message //= "global timeout of $timeout seconds";
   
   my $tb = Test::Builder::Module->builder;
@@ -481,7 +481,7 @@ Test::AnyEventFTPServer - Test (non-blocking) ftp clients against a real FTP ser
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 SYNOPSIS
 
@@ -627,7 +627,7 @@ Set a global timeout on the entire test script.  If the timeout
 is exceeded the test will exit.  Handy if you have test automation
 and your test automation doesn't handle hung tests.
 
-The default timeout is 30 seconds.
+The default timeout is 120 seconds.
 
 =head1 AUTHOR
 

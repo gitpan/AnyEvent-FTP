@@ -10,7 +10,7 @@ use Carp qw( croak );
 use Socket qw( unpack_sockaddr_in inet_ntoa );
 
 # ABSTRACT: Simple asynchronous ftp client
-our $VERSION = '0.04'; # VERSION
+our $VERSION = '0.04_01'; # VERSION
 
 
 with 'AnyEvent::FTP::Role::Event';
@@ -339,7 +339,7 @@ AnyEvent::FTP::Client - Simple asynchronous ftp client
 
 =head1 VERSION
 
-version 0.04
+version 0.04_01
 
 =head1 SYNOPSIS
 

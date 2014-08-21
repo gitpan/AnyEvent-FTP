@@ -7,7 +7,7 @@ use Moo::Role;
 use warnings NONFATAL => 'all';
 
 # ABSTRACT: Server response encoder role
-our $VERSION = '0.04'; # VERSION
+our $VERSION = '0.04_01'; # VERSION
 
 requires 'encode';
 requires 'new';
@@ -26,7 +26,7 @@ AnyEvent::FTP::Server::Role::ResponseEncoder - Server response encoder role
 
 =head1 VERSION
 
-version 0.04
+version 0.04_01
 
 =head1 AUTHOR
 

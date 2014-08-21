@@ -8,7 +8,7 @@ use warnings NONFATAL => 'all';
 use AnyEvent::FTP::Client::Response;
 
 # ABSTRACT: Response buffer role for asynchronous ftp client
-our $VERSION = '0.04'; # VERSION
+our $VERSION = '0.04_01'; # VERSION
 
 
 sub on_next_response
@@ -69,7 +69,7 @@ AnyEvent::FTP::Client::Role::ResponseBuffer - Response buffer role for asynchron
 
 =head1 VERSION
 
-version 0.04
+version 0.04_01
 
 =head1 DESCRIPTION
 

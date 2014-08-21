@@ -7,7 +7,7 @@ use Moo::Role;
 use warnings NONFATAL => 'all';
 
 # ABSTRACT: Fetch transfer interface for AnyEvent::FTP objects
-our $VERSION = '0.04'; # VERSION
+our $VERSION = '0.04_01'; # VERSION
 
 sub xfer
 {
@@ -65,7 +65,7 @@ AnyEvent::FTP::Client::Role::ListTransfer - Fetch transfer interface for AnyEven
 
 =head1 VERSION
 
-version 0.04
+version 0.04_01
 
 =head1 AUTHOR
 

@@ -13,7 +13,7 @@ use Path::Class qw( tempdir );
 extends 'AnyEvent::FTP::Server';
 
 # ABSTRACT: Test (non-blocking) ftp clients against a real FTP server
-our $VERSION = '0.04'; # VERSION
+our $VERSION = '0.04_01'; # VERSION
 
 
 has test_uri => (
@@ -481,7 +481,7 @@ Test::AnyEventFTPServer - Test (non-blocking) ftp clients against a real FTP ser
 
 =head1 VERSION
 
-version 0.04
+version 0.04_01
 
 =head1 SYNOPSIS
 

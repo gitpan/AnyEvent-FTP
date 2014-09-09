@@ -6,7 +6,7 @@ use v5.10;
 use overload '""' => sub { shift->as_string };
 
 # ABSTRACT: Request class for asynchronous ftp server
-our $VERSION = '0.04_01'; # VERSION
+our $VERSION = '0.05'; # VERSION
 
 
 sub new
@@ -45,7 +45,7 @@ AnyEvent::FTP::Request - Request class for asynchronous ftp server
 
 =head1 VERSION
 
-version 0.04_01
+version 0.05
 
 =head1 DESCRIPTION
 

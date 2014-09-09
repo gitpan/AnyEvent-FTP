@@ -7,7 +7,7 @@ use Moo::Role;
 use warnings NONFATAL => 'all';
 
 # ABSTRACT: Role for old archaic FTP server commands
-our $VERSION = '0.04_01'; # VERSION
+our $VERSION = '0.05'; # VERSION
 
 
 has syst => (
@@ -60,7 +60,7 @@ AnyEvent::FTP::Server::Role::Old - Role for old archaic FTP server commands
 
 =head1 VERSION
 
-version 0.04_01
+version 0.05
 
 =head1 SYNOPSIS
 

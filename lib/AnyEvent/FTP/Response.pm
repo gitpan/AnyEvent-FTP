@@ -8,7 +8,7 @@ use overload
   fallback => 1;
 
 # ABSTRACT: Response class for asynchronous ftp client
-our $VERSION = '0.04_01'; # VERSION
+our $VERSION = '0.05'; # VERSION
 
 
 sub new
@@ -51,7 +51,7 @@ AnyEvent::FTP::Response - Response class for asynchronous ftp client
 
 =head1 VERSION
 
-version 0.04_01
+version 0.05
 
 =head1 DESCRIPTION
 

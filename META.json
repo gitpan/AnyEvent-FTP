@@ -51,7 +51,7 @@
          }
       }
    },
-   "release_status" : "testing",
+   "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
          "web" : "https://github.com/plicease/AnyEvent-FTP/issues"
@@ -63,6 +63,6 @@
          "web" : "https://github.com/plicease/AnyEvent-FTP"
       }
    },
-   "version" : "0.04_01"
+   "version" : "0.05"
 }
 

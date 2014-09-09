@@ -18,7 +18,7 @@ my %module_build_args = (
     "Graham Ollis <plicease\@cpan.org>"
   ],
   "dist_name" => "AnyEvent-FTP",
-  "dist_version" => "0.04_01",
+  "dist_version" => "0.05",
   "license" => "perl",
   "module_name" => "AnyEvent::FTP",
   "recommends" => {

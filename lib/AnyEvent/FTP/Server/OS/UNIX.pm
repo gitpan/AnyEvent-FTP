@@ -7,7 +7,7 @@ use Moo;
 use warnings NONFATAL => 'all';
 
 # ABSTRACT: UNIX implementations for AnyEvent::FTP
-our $VERSION = '0.05'; # VERSION
+our $VERSION = '0.06'; # VERSION
 
 
 sub BUILDARGS
@@ -85,7 +85,7 @@ AnyEvent::FTP::Server::OS::UNIX - UNIX implementations for AnyEvent::FTP
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 SYNOPSIS
 

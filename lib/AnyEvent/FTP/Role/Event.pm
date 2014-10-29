@@ -7,7 +7,7 @@ use Moo::Role;
 use warnings NONFATAL => 'all';
 
 # ABSTRACT: Event interface for AnyEvent::FTP objects
-our $VERSION = '0.05'; # VERSION
+our $VERSION = '0.06'; # VERSION
 
 
 sub define_events
@@ -52,7 +52,7 @@ AnyEvent::FTP::Role::Event - Event interface for AnyEvent::FTP objects
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 SYNOPSIS
 

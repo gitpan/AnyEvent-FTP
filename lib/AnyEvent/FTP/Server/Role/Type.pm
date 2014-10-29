@@ -7,7 +7,7 @@ use Moo::Role;
 use warnings NONFATAL => 'all';
 
 # ABSTRACT: Type role for FTP server
-our $VERSION = '0.05'; # VERSION
+our $VERSION = '0.06'; # VERSION
 
 
 has type => (
@@ -55,7 +55,7 @@ AnyEvent::FTP::Server::Role::Type - Type role for FTP server
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 SYNOPSIS
 

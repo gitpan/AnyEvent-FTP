@@ -10,7 +10,7 @@ use AnyEvent::Handle;
 use Carp qw( confess );
 
 # ABSTRACT: Transfer class for asynchronous ftp client
-our $VERSION = '0.05'; # VERSION
+our $VERSION = '0.06'; # VERSION
 
 
 # TODO: implement ABOR
@@ -101,7 +101,7 @@ AnyEvent::FTP::Client::Transfer - Transfer class for asynchronous ftp client
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 SYNOPSIS
 
